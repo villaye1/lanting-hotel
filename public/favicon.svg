@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="岚庭国际">
+  <rect width="32" height="32" rx="6" fill="#1C3A32"/>
+  <path fill="#A67C3D" d="M2 16h4l10-10 10 10h4L16 4Z"/>
+  <rect x="8" y="16" width="16" height="10" fill="#F4EFE7"/>
+  <rect x="14" y="19" width="4" height="7" fill="#1C3A32"/>
+  <rect x="6" y="26" width="20" height="2" fill="#A67C3D"/>
+</svg>

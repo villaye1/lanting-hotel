@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #f4efe7;
+  --color-paper: #fbf7f1;
+  --color-ink: #2a221c;
+  --color-muted: #7a6d60;
+  --color-forest: #1c3a32;
+  --color-canopy: #2f5a4c;
+  --color-gold: #a67c3d;
+  --color-brass: #c4a36a;
+  --color-line: #e4d8c8;
+  --color-danger: #8d3b32;
+  --color-ok: #2c6b4a;
+  --font-sans: "Noto Sans SC", "WenQuanYi Zen Hei", "PingFang SC", sans-serif;
+  --font-display: "Cormorant Garamond", "Songti SC", "Noto Serif SC", serif;
+  --radius-card: 0.9rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-forest);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+}
+
+.lt-shell {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-forest);
+  color: var(--color-ivory);
+  overflow: hidden;
+}
+
+.lt-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+  cursor: grab;
+}
+
+.lt-canvas.is-drag {
+  cursor: grabbing;
+}
+
+.lt-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}
